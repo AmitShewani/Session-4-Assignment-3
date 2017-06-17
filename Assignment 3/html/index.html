@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 4.3 - Front End Web Development Fundamentals</title>
+<style>
+h1
+{
+color: Blue;
+font-size: 25px;
+font-family: arial;
+text-decoration: underline;
+}
+body
+{
+font-size: 18px;
+font-family: sans-serif;
+}
+/* Set the transition so that it will take 2 seconds for width and height to change and the transformation will also take 2 seconds to complete*/
+.applyBorder
+{
+border-style: solid;
+    border-width: 1px;
+    display:table;
+    transition: width 2s, height 2s, transform 2s;
+
+}
+.applyBorder:hover
+{
+
+    border-width: 10px;
+width: 500px;
+height: 400px;
+/* This will rotate the div contents by 180 deg*/
+transform: rotate(180deg);
+}
+.imageHover:hover
+{
+
+width: 500px;
+height: 400px;
+}
+</style>
+</head>
+<body>
+    <h1>CSS3 transition with transformation tutorial</h1><br>
+    <p> Div with an image!</p><br><br><br>
+<!--This div contains an image without a border-->
+<div class="applyBorder">
+    
+<img class="imageHover" src="../images/sunrise.jpg" width="200" height="200"/>
+    </div>
+</body>
+</html>
